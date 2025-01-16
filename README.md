@@ -13,13 +13,13 @@ The Sharpe Ratio is widely used to assess the risk-adjusted return of investment
 ## Conditional Volatility
 Conditional volatility refers to the time-varying risk of asset returns, adjusting for changing market conditions over time. Unlike standard deviation, which assumes constant volatility, conditional volatility reflects the influence of past returns and market shocks on future risk. In the context of the Sharpe ratio, conditional volatility is used to replace constant volatility in the denominator, offering a more accurate measure of risk that adapts to fluctuating market environments. The formula for conditional volatility in a GARCH model incorporates past return shocks and prior volatility to estimate future risk. Using conditional volatility in the Sharpe ratio calculation results in a more dynamic and precise evaluation of an asset’s risk-adjusted return.
 
-sharpe_ratio2.jpg
+![sharpe_ratio2.jpg](https://github.com/fredericknathan/time-varying-sharpe-ratio/blob/main/sharpe_ratio2.jpg)
 
 The only modification to the original formula lies in the denominator, where the standard deviation (
 ) is replaced by conditional volatility 
 .
 
-conditional_var.jpg
+![conditional_var.jpg](https://github.com/fredericknathan/time-varying-sharpe-ratio/blob/main/conditional_var.jpg)
 
 In a GARCH(p, q) model (Generalized Autoregressive Conditional Heteroskedasticity), the conditional volatility, often denoted as 
 , is modeled as a function of past squared residuals (ARCH terms) and past conditional variances (GARCH terms).
