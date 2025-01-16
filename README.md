@@ -28,5 +28,4 @@ In a GARCH(p, q) model (Generalized Autoregressive Conditional Heteroskedasticit
 Keep in mind that the GARCH model can suffer from overfitting when high values of p and q are selected. To mitigate this risk, it's crucial to perform hyperparameter tuning and use techniques such as cross-validation to identify the optimal model parameters. This will ensure better generalization and prevent the model from fitting noise in the data.
 
 ## Conclusion
-The time-varying volatility can be modeled using a GARCH(p, q) framework to capture the non-IID nature of asset returns, with conditional volatility (
-) serving as a dynamic risk measure. This allows for a more accurate calculation of the Sharpe ratio, incorporating time-varying risk in the denominator. To mitigate overfitting, it is essential to employ cross-validation and a rolling window approach for optimal hyperparameter selection.
+The time-varying volatility can be modeled using a GARCH(p, q) framework to capture the non-IID nature of asset returns, with conditional volatility serving as a dynamic risk measure. This allows for a more accurate calculation of the Sharpe ratio, incorporating time-varying risk in the denominator. To mitigate overfitting, it is essential to employ cross-validation and a rolling window approach for optimal hyperparameter selection.
